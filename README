@@ -1,0 +1,23 @@
+To use:
+
+    1) Optionally run these commands to build the firmware:
+           cd tools
+           make
+           cd ../rom
+           make
+           cp zm2_rom.vhd ../fpga/
+
+    2) Build the fpga/zm2.xise project in Xilinx ISE
+
+    3) Upload top.bit to a Papilio Pro board
+
+    4) Connect a VGA wing to slot CL
+
+    5) Connect a PS2 wing to slot CH
+
+    6) You should now have a BASIC prompt on the screen
+
+    7) To play a game of breakout, type:
+           CALL $FC00
+
+
