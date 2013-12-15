@@ -3,5 +3,7 @@ DIRS = cc65        \
 
 .PHONY: $(DIRS)
 
+all: $(DIRS)
+
 $(DIRS):
 	@$(MAKE) -C $@
